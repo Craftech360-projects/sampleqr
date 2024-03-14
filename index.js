@@ -3,13 +3,13 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to the data.json file
-const dataPath = './data.json';
+const dataPath = './data1.json';
 
 // Read data from data.json
 const dataArray = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 // Directory where the QR codes will be saved
-const qrDirectory = './qr';
+const qrDirectory = './qr1';
 
 // Ensure the qr directory exists
 if (!fs.existsSync(qrDirectory)){
